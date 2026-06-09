@@ -1,13 +1,13 @@
-provider "aws" {
-  region = var.aws_region
-
-  default_tags {
-    tags = {
-      Project     = var.project_name
-      Environment = var.environment
-      ManagedBy   = "Terraform"
-      Owner       = Marquis
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "6.46.0"
     }
   }
+}
+
+provider "aws" {
+  # Configuration options
 
 }

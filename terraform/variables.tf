@@ -1,18 +1,47 @@
-variable "aws_region" {
-  description = "AWS region where resources will be deployed."
+variable "vpc_cidr" {
+  description = "CIDR block for the main VPC"
   type        = string
-  default     = "us-east-1"
+
 }
 
-variable "project_name" {
-  description = "Name used to identify project resources."
+variable "public_subnet_a_cidr" {
+  description = "CIDR block for Public Subnet A"
   type        = string
-  default     = "secure-aws-baseline"
 }
 
-variable "environment" {
-  description = "Environment name for tagging and naming."
+variable "public_subnet_b_cidr" {
+  description = "CIDR block for Public Subnet B"
   type        = string
-  default     = "dev"
+}
 
+variable "private_app_subnet_a_cidr" {
+  description = "CIDR block for Private App Subnet A"
+  type        = string
+}
+
+variable "private_app_subnet_b_cidr" {
+  description = "CIDR block for Private App Subnet B"
+  type        = string
+}
+
+variable "private_data_subnet_a_cidr" {
+  description = "CIDR block for Private Data Subnet A"
+  type        = string
+
+}
+
+variable "private_data_subnet_b_cidr" {
+  description = "CIDR block for Private Data Subnet B"
+  type        = string
+
+}
+
+variable "az_a" {
+  description = "Availability Zone A"
+  type        = string
+}
+
+variable "az_b" {
+  description = "Availability Zone B"
+  type        = string
 }
