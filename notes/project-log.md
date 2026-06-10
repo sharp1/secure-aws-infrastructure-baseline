@@ -33,6 +33,7 @@ Folders created:
 Phase Complete:
 Network System
 Security System
+Access System
 
 Validated:
 - VPC deployed
@@ -49,3 +50,14 @@ Lessons Learned:
 - Stateless NACL behavior
 - Security Group trust relationships
 - Traffic flow between tiers
+
+I implemented a private EC2 administration pattern using IAM, Session Manager, and VPC endpoints
+
+Validated
+-IAM Role
+-Instance Profile
+-Private EC2
+-Security Groups
+-NACLs
+-SSM Endpoints
+-Session Manager
