@@ -472,3 +472,14 @@ resource "aws_network_acl_association" "private_app_b" {
   network_acl_id = aws_network_acl.private_app.id
 
 }
+
+resource "aws_network_acl_rule" "private_app_inbound_https_from_vpc" {
+  network_acl_id = aws_network_acl.private_app.id
+  rule_number    = 105
+  egress         = false
+  protocol       = "tcp"
+  rule_action    = "allow"
+  cidr_block     = var.vpc_cidr
+  from_port      = 443
+  to_port        = 443
+}

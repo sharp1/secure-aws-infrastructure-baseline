@@ -45,3 +45,8 @@ variable "az_b" {
   description = "Availability Zone B"
   type        = string
 }
+
+variable "aws_region" {
+  description = "AWS deployment region"
+  type        = string
+}
