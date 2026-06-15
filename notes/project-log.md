@@ -61,3 +61,5 @@ Validated
 -NACLs
 -SSM Endpoints
 -Session Manager
+
+Monitoring System started: CloudTrail enabled with S3 log archive.
