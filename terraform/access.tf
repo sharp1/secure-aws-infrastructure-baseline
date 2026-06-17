@@ -66,11 +66,24 @@ resource "aws_instance" "ec2_instance" {
   iam_instance_profile        = aws_iam_instance_profile.ssm_profile.name
   associate_public_ip_address = false
 
+  root_block_device {
+    encrypted   = true
+    kms_key_id  = aws_kms_alias.baseline.arn
+    volume_type = "gp3"
+
+    tags = {
+      Name = "secure-baseline-private-ec2-root-volume"
+    }
+  }
+
   tags = {
     Name = "secure-baseline-private-ec2"
   }
 
 }
+
+
+
 
 
 # Create a security group for the EC2 instance

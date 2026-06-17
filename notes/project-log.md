@@ -63,3 +63,14 @@ Validated
 -Session Manager
 
 Monitoring System started: CloudTrail enabled with S3 log archive.
+
+Protection System started:
+- Created customer-managed KMS key
+- Enabled key rotation
+- Applied KMS encryption to CloudTrail and AWS Config S3 buckets
+
+Protection System updated:
+- EC2 root volume encrypted with customer-managed KMS key
+
+Protection System updated:
+- Enabled CloudTrail log file validation to support audit log integrity verification
