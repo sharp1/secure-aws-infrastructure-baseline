@@ -12,3 +12,6 @@ This project demonstrates a secure AWS infrastructure baseline focused on transl
 ## Architecture Diagram
 
 [![AWS Secure Baseline VPC Architecture](docs/aws-secure-baseline-vpc.png)](docs/aws-secure-baseline-vpc.png)
+
+
+This diagram shows a multi-AZ secure AWS VPC baseline with public, private application, and private database tiers. Public subnets route through the Internet Gateway, private application subnets use NAT Gateways for controlled outbound access, and private database subnets have no default internet route. Security group trust flows from ALB → App → DB.
