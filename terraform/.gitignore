@@ -1,0 +1,20 @@
+# Terraform local/cache
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files
+terraform.tfvars
+*.auto.tfvars
+
+# Secrets / local environment
+.env
+.env.*
+*.pem
+*.key
+.aws/
