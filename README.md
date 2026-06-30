@@ -21,4 +21,4 @@
 - Encrypt logs and data using KMS, S3 encryption, and EBS encryption
 - Support RMF/NIST-aligned control implementation through repeatable Terraform
 
-- ![Secure AWS Infrastructure Baseline Architecture](docs/aws-secure-baseline-vpc.png- )
+- ![Secure AWS Infrastructure Baseline Architecture](docs/https://github.com/sharp1/secure-aws-infrastructure-baseline/blob/main/docs/aws-secure-baseline-vpc.png- )
